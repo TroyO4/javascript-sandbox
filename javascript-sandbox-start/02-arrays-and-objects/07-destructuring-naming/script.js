@@ -28,11 +28,11 @@ const {
   user: { name },
 } = todo;
 
-// console.log(toDoId);
+console.log(toDoId);
 
 // Destructure Arrays
 const numbers = [23, 345, 34, 22, 52, 22];
 
 const [first, second, ...rest] = numbers;
 
-console.log(first, second, rest);
+console.log(todo);
