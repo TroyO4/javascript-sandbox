@@ -44,8 +44,9 @@ const youngPeople = people
     email: person.email,
   }));
 
-// console.log(youngPeople);
+console.log(youngPeople);
 
+// Challenge 2
 const numbers = [2, -30, 50, 20, -12, -9, 7];
 
 const positiveSum = numbers
@@ -53,3 +54,12 @@ const positiveSum = numbers
   .reduce((acc, cur) => (acc += cur), 0);
 
 console.log(positiveSum); // 79
+
+// Challenge 3
+const words = ['coder', 'programmer', 'developer'];
+
+const capitalizedWords = words.map(
+  (lett) => lett[0].toUpperCase() + lett.substring(1)
+);
+
+console.log(capitalizedWords); // ['Coder', 'Programmer', 'Developer']
