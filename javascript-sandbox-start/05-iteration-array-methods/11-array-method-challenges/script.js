@@ -37,5 +37,19 @@ const people = [
   },
 ];
 
-// Challenge 2
+const youngPeople = people
+  .filter((person) => person.age <= 25)
+  .map((person) => ({
+    name: `${person.firstName} ${person.lastName}`,
+    email: person.email,
+  }));
+
+// console.log(youngPeople);
+
 const numbers = [2, -30, 50, 20, -12, -9, 7];
+
+const positiveSum = numbers
+  .filter((num) => num > 0)
+  .reduce((acc, cur) => (acc += cur), 0);
+
+console.log(positiveSum); // 79
