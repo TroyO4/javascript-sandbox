@@ -58,8 +58,8 @@ console.log(positiveSum); // 79
 // Challenge 3
 const words = ['coder', 'programmer', 'developer'];
 
-const capitalizedWords = words.map(
-  (lett) => lett[0].toUpperCase() + lett.substring(1)
-);
+const capitalizedWords = words.map((lett) => {
+  return lett[0].toUpperCase() + lett.substring(1);
+});
 
 console.log(capitalizedWords); // ['Coder', 'Programmer', 'Developer']
